@@ -1,0 +1,36 @@
+.wrapper{
+    display: flex;
+    flex-direction: column ;
+    width: auto;
+    background-image: url('~/src/assets/images/rsz_4background.jpg');
+}
+
+.container{
+    display: flex;
+    margin-top:85px;
+}
+
+
+.content{
+    margin-left: 180px;
+    width: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 18px;
+}
+
+@media (max-width:530px) {
+    .content{
+        margin-left: 0;
+        padding: 0;
+    }
+}
+
+@media (min-width:900px) {
+    .content{
+        margin-left: 20%;
+    }
+}
+
+
+

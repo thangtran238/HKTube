@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Roboto:wght@400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.check {
+  margin: 5px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+}
+body:after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(45deg, #87CEFA, #CAE1FF, #87CEFA, #CAE1FF);
+  width: 60%;
+  height: 100vh;
+  -webkit-clip-path: polygon(0 100%, 0 0, 100% 0, 70% 100%);
+          clip-path: polygon(0 100%, 0 0, 100% 0, 70% 100%);
+  z-index: -1;
+}
+
+.container .login-header {
+  background-color: white;
+  height: 80px;
+  left: 0px;
+  top: 0px;
+  line-height: 80px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.container .banner {
+  margin-left: 35px;
+  display: flex;
+  flex-direction: row;
+}
+.container .h-title {
+  color: #87CEFA;
+}
+.container .k-title {
+  color: #CAE1FF;
+}
+
+.login-body {
+  height: 86vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 10px 50px -30px black;
+  height: 600px;
+  width: 1200px;
+  border-radius: 30px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.login-card a {
+  text-decoration: none;
+  color: #87CEFA;
+}
+.login-card .column {
+  padding: 4rem;
+}
+.login-card .column:last-child {
+  background: url("/asset/img/19007.jpg");
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.login-card .column:last-child:after {
+  content: "";
+  position: absolute;
+  background: linear-gradient(90deg, white, rgba(255, 255, 255, 0.5098039216));
+}
+.login-card .column:last-child * {
+  z-index: 1;
+}
+.login-card .column:last-child .social-login {
+  display: flex;
+  flex-direction: column;
+}
+.login-card .column:last-child .social-login button {
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 8px;
+  padding: 4px 20px;
+  width: 300px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s;
+  box-shadow: 0 5px 10px 1px #CAE1FF;
+}
+.login-card .column:last-child .social-login button.facebook {
+  background-color: #3b5998;
+  color: #fff;
+}
+.login-card .column:last-child .social-login button.google {
+  background-color: #fff;
+  border: 1px solid gray;
+}
+.login-card .column:last-child .social-login button.google i {
+  color: #B4464C;
+}
+.login-card .column:last-child .social-login button i {
+  font-size: 30px;
+}
+.login-card .column:last-child .social-login button:hover {
+  scale: 1.1;
+}
+.login-card .column:last-child .btn-signup {
+  display: inline-block;
+  padding: 12px 30px;
+  font-size: 16px;
+  border: 2px solid #87CEFA;
+  border-radius: 50px;
+  color: black;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 600;
+}
+.login-card .column:last-child .btn-signup:hover {
+  background-color: #87CEFA;
+  color: white;
+}
+.login-card:last-child {
+  text-align: center;
+}
+.login-card h1 {
+  margin-bottom: 15px;
+}
+
+.login-card .form-row {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+
+}
+
+.login-card .form-element {
+  width: 100%;
+  border: none;
+  background-color: #f1f1f1;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 50px;
+  transition: box-shadow 0.2s;
+}
+.login-card .form-element:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #87CEFA;
+}
+.login-card input[type=checkbox] {
+  accent-color: #87CEFA;
+  width: 16px;
+  height: 16px;
+}
+.login-card button[type=submit] {
+  padding: 18px 30px;
+}
+.login-card button[type=submit]:hover {
+  scale: 0.95;
+}
+.login-card form {
+  margin-top: 1rem;
+}
+.login-card form > * {
+  margin-top: 1rem;
+}
+.login-card form button {
+  background-color: #87CEFA;
+  color: white;
+  border: none;
+  padding: 20px 40px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+  transition: all 0.2s;
+}
+.login-card form button:active {
+  scale: 0.95;
+  background-color: #97c4ff;
+}
+.login-card form .form-checkbox-item {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-left: 5px;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+.login-card form .clarify {
+  margin: 25px 0;
+  line-height: 20px;
+}
+.login-card form .clarify .hight-light {
+  color: #87CEFA;
+  text-decoration: underline;
+}
+.login-card form .clarify .hight-light:hover {
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+.social-buttons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  font-size: 22px;
+  color: white;
+  background-color: #CAE1FF;
+}
+.social-buttons a.facebook {
+  background-color: #3b5998;
+}
+.social-buttons a.twitter {
+  background-color: #55acee;
+}
+.social-buttons a.github {
+  background-color: #111;
+}
+.social-buttons a:hover {
+  scale: 0.95;
+}
+
+@media (max-width: 992px) {
+  .login-card {
+    display: block;
+    width: 500px;
+    text-align: center;
+  }
+  .login-card .column:last-child {
+    display: none;
+  }
+  .flex {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,158 @@
+.wrapper{
+    min-width: 328px;
+    grid-row-gap: 10px;
+    grid-column-gap: 18px;
+    margin: 15px;
+    position: relative;
+    
+    .info{
+        display: flex;
+        img{
+            margin-right: 15px;
+        }
+    }
+    .img-video{
+        border-radius: 10px;
+        width: 100%;
+        height: 250px;
+    } 
+}
+
+
+
+
+.video-container{
+overflow: hidden;
+position: relative;
+width: 100%;
+border-radius: 15px;
+
+}
+
+.video-container::after{
+padding-top: 56.25%;
+display: block;
+content: "";
+}
+
+.video-container iframe{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+
+// author info
+.info{
+margin-left: 12px;
+margin-top: 12px;
+}
+.info-top{
+display: flex;
+}
+
+.views::before{
+    content: "|";
+    margin-left:3px ;
+    margin-right: 3px;
+}
+
+.avatar{
+width: 40px;
+height: 40px;
+border-radius: 50%;
+object-fit: cover;
+}
+.name-video{
+font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+color: var(--primary);
+
+white-space: nowrap; 
+overflow: hidden;
+text-overflow: ellipsis; 
+
+}
+
+.cl{
+    .name-video{
+        white-space: unset;
+        width: unset;
+    }
+    .img-video{
+        height: auto;
+    }
+}
+
+.wc{
+    display: flex;
+    border-radius: 15px;
+    width: 100%;
+    user-select: none;
+    &:hover{
+        background-color: rgb(236, 236, 236);
+        
+    }
+    .wc{
+        padding-left: 30px;
+        margin: 18px 0;
+        height: 165px;
+        .info{
+            padding-top: 13px;
+        }
+        .name-video{
+            
+            width: auto;
+        }
+        .img-video{
+            width: 300px;
+            height: auto;
+        }
+    }
+}
+
+@media (min-width:830px) {
+    .name-video{
+        width: 300px;
+    }
+    .img-video{
+        border-radius: 10px;
+        width: 100%;
+        height: 250px;
+    } 
+}
+
+@media (max-width:530px) {
+    .wrapper{
+        margin: 15px 0;
+    }
+    .video-container{
+        border-radius: 0;
+    }
+
+    .wc{
+        display: block;
+        border-radius: 15px;
+        user-select: none;
+        &:hover{
+            background-color: rgb(236, 236, 236);
+            
+        }
+        .wc{
+            padding-left: 0;
+            margin: 0 0;
+            height: auto;
+            .name-video{
+                width: auto;
+            }
+        }
+    }
+    .img-video{
+        border-radius: 10px;
+        width: 100%;
+        height: auto;
+    } 
+}

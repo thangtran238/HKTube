@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="asset/img/logo.svg" />
+  <title>HKTube Login</title>
+  <link rel="stylesheet" href="asset/style/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+<body onload="getUser()">
+  <div class="container">
+    <div class="login-header">
+      <div class="banner">
+        <img src="asset/img/logo.svg" alt="">
+        <h2><span class="h-title">H</span><span class="k-title">K</span>Tube</h2>
+      </div>
+    </div>
+    <div class="login-body">
+      <div class="login-card">
+        <div class="column">
+          <h1>Login</h1>
+          <p>Login to explore more feature</p>
+          <form name="lgf">
+            <div class="form-item">
+              <input type="text" class="form-element" placeholder="Username" id="user">
+            </div>
+            <div class="form-item">
+              <input type="password" class="form-element" placeholder="Password" id="pass" onkeyup="checklogin()">
+              <div class="form-checkbox-item">
+                <input type="checkbox" id="rememberMe" checked>
+                <label for="rememberMe">Remember Me</label>
+                <div>
+                  <p id="wrong"></p>
+                </div>
+              </div>
+              <div class="flex">
+                <button type="text" id="btn-signin" disabled onclick="login()">Sign in</button>
+              </div>
+            </div>
+            <p>Other sign-in methods</p>
+            <div class="social-buttons">
+              <a href="" class="facebook">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="" class="twitter">
+                <i class="bi bi-twitter"></i>
+              </a>
+              <a href="" class="github">
+                <i class="bi bi-github"></i>
+              </a>
+            </div>
+          </form>
+        </div>
+        <div class="column">
+          <h2>Welcome to <span class="h-title">H</span><span class="k-title">K</span>Tube</h2>
+          <p>If you don't have an account, would you like to register <br> right now?</p>
+          <input type="button" class="btn-signup" id="btnchange" value="Sign up" onclick="changepage()">
+          <p>Visit our social links</p>
+            <div class="social-buttons">
+              <a href="" class="facebook">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="" class="twitter">
+                <i class="bi bi-twitter"></i>
+              </a>
+              <a href="" class="github">
+                <i class="bi bi-github"></i>
+              </a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.2/axios.min.js" integrity="sha512-QTnb9BQkG4fBYIt9JGvYmxPpd6TBeKp6lsUrtiVQsrJ9sb33Bn9s0wMQO9qVBFbPX3xHRAsBHvXlcsrnJjExjg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="function/function.js"></script>
+</body>
+</html>

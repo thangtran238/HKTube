@@ -1,0 +1,163 @@
+.wrapper{
+    padding-top: 180px;
+    background-image: url('~/src/assets/images/rsz_4background.jpg');
+    h1{
+        text-align: center;
+        margin-bottom: 50px;
+        font-size: 50px;
+        font-weight: 700;
+    }
+    form{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 50px;
+        .info-left{
+            label{
+                display: flex;
+                text-align: left;
+                align-items: center;
+                justify-content: center;
+                margin: 45px 15px;
+            }
+            span{
+                display: flex;
+                .type{
+                    display: block;
+                    margin: auto;
+                    border-radius: 5px;
+                }
+            }
+          
+            .Title,.Description{
+                padding: 10px;
+                width: 500px;
+                border: 1px solid black;
+                border-radius: 10px;
+            }
+            .Description{
+                border: 1px solid black;
+                width: 505px;
+                height: 100px;
+            }
+          
+        }
+        .info-right{
+            text-align: center;
+            justify-content: end;
+            align-items: center;
+            margin: 0 auto;
+            .img{
+                width: 270px;
+                height: 170px;
+            }
+        }
+
+    }
+    .upload{
+        display: block;
+        margin: 0 auto;
+        border: 1px solid black;
+        padding: 20px 50px;
+        border-radius: 50px;
+        &:hover{
+            background-color: var(--primary);
+        }
+    }
+    
+}
+
+
+.wrapper{
+    padding-top: 180px;
+    background-image: url('~/src/assets/images/rsz_4background.jpg');
+    h1{
+        text-align: center;
+        margin-bottom: 50px;
+        font-size: 50px;
+        font-weight: 700;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        
+    }
+    form{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 50px;
+        .info-left{
+            label{
+                display: flex;
+                text-align: left;
+                align-items: center;
+                justify-content: center;
+                margin: 45px 15px;
+                font-size: 18px;
+                font-weight: 500;
+                
+
+            }
+            span{
+                display: flex;
+                font-size: 18px;
+                font-weight: 500;
+                .type{
+                    display: block;
+                    margin: auto;
+                    border-radius: 25px;
+                    width: 200px;
+                    outline: 1px solid #87CEFA;
+                    padding: 1.2rem 1.6rem;
+                }
+            }
+          
+            .Title,.Description{
+                font-weight: 300;
+                padding: 2rem;
+                width: 500px;
+                border: none;
+                border-radius: 20px;
+                height: 65px;
+                box-shadow: 0px 1px 5px 0px #87CEFA;
+                
+            }
+            .Description{
+                outline: none;
+                width: 505px;
+                height: 100px;
+            }
+          
+        }
+        .info-right{
+            text-align: center;
+            justify-content: end;
+            align-items: center;
+            margin: 0 auto;
+            .img{
+                width: 270px;
+                height: 170px;
+                justify-items: auto;
+            }
+
+        }
+
+    }
+    .upload{
+        display: block;
+        margin: 0 auto;
+        border: 2px solid #87CEFA;
+        color: #87CEFA;
+        font-weight: 500;
+        font-size: 20px;
+        padding: 1.4rem 4rem;
+        border-radius: 50px;
+        transition: all 0.5s;
+        outline: none;
+        &:active {
+            width: 170px;
+        }
+        &:hover{
+            border:2px solid white;
+            color:#fff;
+            background-color: var(--primary);
+        }
+    }
+    
+}
